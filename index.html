@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS-->
+     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" type="text/css" />
+
+    <link rel="stylesheet" href="css/framework7.ios.min.css">
+    <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+  </head>
+  <body>
+<!-- Status bar overlay for fullscreen mode-->
+<div class="statusbar-overlay"></div>
+<!-- Panels overlay-->
+<div class="panel-overlay"></div>
+<!-- Left panel with reveal effect-->
+<div class="panel panel-left panel-reveal">
+  <div class="content-block">
+    <p>Left panel content goes here</p>
+  </div>
+</div>
+    <!-- Right panel with cover effect-->
+    <div class="panel panel-right panel-cover">
+      <div class="content-block">
+        <p>Right panel content goes here</p>
+      </div>
+    </div>
+    
+<div class="views"><!-- Views start-->
+<div class="view view-main">
+
+<div class="navbar"> 
+<!--   Navbar for indext page-->
+ <div data-page="index" class="navbar-inner">
+   <div class="left"></div>
+   <div class="center">Sub Navbar</div>
+   <div class="right"></div>
+   <!-- Sub navbar -->
+   <div class="subnavbar">
+     <form data-search-list=".list-block-search" data-search-in=".item-title" class="searchbar searchbar-init">
+      <div class="searchbar-input">
+      <input type="search" placeholder="Search"><a href="#" class="searchbar-clear"></a>
+      </div><a href="#" class="searchbar-cancel">Cancel</a>
+     </form>
+   </div>
+ </div>
+      <!-- Navbar inner for About page-->
+     <div data-page="about" class="navbar-inner cached">
+       <div class="left sliding"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+       <div class="center sliding">About Us</div>
+     </div>
+</div>
+   
+   
+   <div class="pages navbar-through">
+      <!-- Pag has additional "with-subnavbar" class -->
+      <div data-page="index" class="page with-subnavbar">
+        <div class="page-content hide-bars-on-scroll">
+          <div class="content-block">
+  
+           
+<div class="list-block media-list">
+  <ul id="results">
+<!--
+    <li>
+      <a href="#about" class="item-link item-content">
+        <div class="item-media"><img src="..." width="80"></div>
+        <div class="item-inner">
+          <div class="item-title-row">
+            <div class="item-title">Yellow Submarine</div>
+            <div class="item-after">$15</div>
+          </div>
+          <div class="item-subtitle">Beatles</div>
+          <div class="item-text">Lorem ipsum dolor sit amet...</div>
+        </div>
+      </a>
+    </li>
+-->
+    
+  </ul>
+  
+  
+</div><!--List-block end-->
+
+</div><!--content block end-->
+</div>
+</div>
+      <!-- About Page-->
+      <div data-page="about" class="page cached">
+        <div class="page-content">
+          <div class="content-block">
+              <iframe id="ytplayer" type="text/html" width="100%" height="" src="https://www.youtube.com/embed/nhN3bdbbCxg?enablejsapi=1&rel=0&playsinline=1&autoplay=1" frameborder="0"></iframe>  
+          </div>
+        </div>
+       </div>
+          <!-- About Page end-->
+   </div>
+</div>
+</div> <!-- Views end--> 
+   <script src="//code.jquery.com/jquery-2.1.4.js" type="text/javascript"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js" type="text/javascript"></script>         
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+    
+  </body>
+</html>
